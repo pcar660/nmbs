@@ -1,7 +1,7 @@
-CREATE TABLE audience_riv_work_20250407_2 (
+CREATE TABLE audience_riv_work_20250407_4 (
     hashed_email_id TEXT PRIMARY identity NAMESPACE 'hashedEmailId',
     riv_work_segment ROW (
         is_in_segment BOOLEAN,
-        segment_created_date DATE
+        segment_created_datetime datetime
     )
 ) WITH (LABEL='PROFILE');
